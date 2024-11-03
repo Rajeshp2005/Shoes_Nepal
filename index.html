@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth animate-fadeIn delay-3000 ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe company</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white m-2">
+    <header
+      class="px-12 section-container flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] bg-slate-800/70 backdrop-blur-sm z-10 -mt-5"
+    >
+      <a href="#">
+        <img src="img/Nepal.png" alt="" class="w-32 mt-5 rounded-full" />
+        <p class="text-sm -mt-8 m-5">Shoes Nepal</p>
+      </a>
+     
+      <div class="relative">
+        <!-- Hamburger Icon for small screens -->
+        <button
+          class="md:hidden text-2xl p-3 focus:outline-none transition duration-300 ease-in-out hover:text-slate-500"
+          onclick="document.getElementById('menu').classList.toggle('hidden')"
+        >
+          <!-- Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Navbar for medium and large screens -->
+        <nav
+          id="desktop-menu"
+          class="hidden md:flex md:space-x-8 lg:space-x-10 lg:text-xl font-bold"
+        >
+          <a
+            href="#"
+            class="hover:text-slate-400 transition duration-300 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="#how-it-works"
+            class="hover:text-slate-400 transition duration-300 ease-in-out"
+            >Working Principle</a
+          >
+          <a
+            href="#about"
+            class="hover:text-slate-400 transition duration-300 ease-in-out"
+            >About</a
+          >
+          <a
+            href="#testimonials"
+            class="hover:text-slate-400 transition duration-300 ease-in-out"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-slate-400 transition duration-300 ease-in-out"
+            >Contact Us</a
+          >
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="fixed inset-0 bg-slate-800 z-20 flex flex-col items-center space-y-6 p-10 md:hidden hidden transition-transform transform duration-500 ease-in-out"
+          style="top: 15px"
+        >
+          <!-- Close Icon -->
+          <button
+            class="text-2xl p-3 self-end focus:outline-none transition duration-300 ease-in-out hover:text-slate-500 z-10"
+            onclick="document.getElementById('menu').classList.add('hidden')"
+          >
+            <!-- Close SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h3 class="flex flex-col w-full m-auto space-y-8 bg-slate-800 p-5">
+          <a
+            href="#"
+            class="text-xl hover:text-slate-400 transition duration-300 ease-in-out bg-slate-800"
+            >Home</a
+          >
+          <a
+            href="#how-it-works"
+            class="text-xl hover:text-slate-400 transition duration-300 ease-in-out bg-slate-800"
+            >Working Principle</a
+          >
+          <a
+            href="#about"
+            class="text-xl hover:text-slate-400 transition duration-300 ease-in-out bg-slate-800"
+            >About</a
+          >
+          <a
+            href="#testimonials"
+            class="text-xl hover:text-slate-400 transition duration-300 ease-in-out bg-slate-800"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="text-xl hover:text-slate-400 transition duration-300 ease-in-out bg-slate-800"
+            >Contact Us</a
+          >
+        </h3>
+      </div>
+    </header>
+    <section id="hero" class="pt-36 section-container bg-gray-300">
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between max-w-6xl mx-auto"
+      >
+        <h1
+          class="text-6xl md:text-7xl font-bold leading-[64px] md:leading-[92px]"
+        >
+          SHOES<br />
+          NEPAL <br />
+        </h1>
+        <div>
+          <img
+            class="w-full max-w-xl"
+            src="img/hero-image.png"
+            alt="white shoe image"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      id="how-it-works"
+      class="section-container pt-20 scroll-mt-10 bg-slate-500 text-black"
+    >
+      <h2 class="text-center text-3xl font-bold max-w-md mx-auto mt-5">
+        Have they finally made the perfect workout shoe?
+      </h2>
+      <div class="max-w-xl mx-auto pt-60 xl:pt-12 relative">
+        <img
+          class="w-full max-w-2xl rotate-6 p-8 media440:p-0 xl:rotate-0"
+          src="img/how-it-works.png"
+          alt="shoe"
+        />
+        <div
+          class="max-w-[200px] xl:max-w-xs absolute top-0 xl:-translate-x-full"
+        >
+          <h3 class="text-lg media560:text-2xl font-bold">THE HEEL</h3>
+          <p class="text-xs media560:text-lg">
+            The heel is well-built, has appropriate elevation and is not too
+            rigid.
+          </p>
+          <img
+            class="w-32 translate-y-8 xl:ml-auto rotate-45 xl:rotate-0"
+            src="img/arrow-1.png"
+            alt="arrow-1"
+          />
+        </div>
+        <div
+          class="max-w-[200px] xl:max-w-xs absolute top-16 media560:top-0 right-0 xl:-right-60"
+        >
+          <img
+            class="w-32 media560:w-auto xl:-ml-32 translate-y-full media560:translate-y-60 rotate-[120deg] xl:translate-y-0 xl:rotate-0"
+            src="img/arrow-2.png"
+            alt="arrow-2"
+          />
+          <h3 class="text-lg media560:text-2xl font-bold -mt-20">THE FRONT</h3>
+          <p class="text-xs media560:text-lg">
+            The front is comfortable and adjusts well to the shape of your foot.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="section-container mt-32 flex flex-col md:flex-row md:space-x-12 scroll-mt-28 bg-gray-300 text-black"
+    >
+      <h2 class="text-3xl my-6 text-center font-bold md:hidden">About Us!</h2>
+      <div class="md:w-full self-center">
+        <img src="img/about-shoe-company.png" alt="legs" />
+      </div>
+      <div class="space-y-8 max-w-xl md:w-full">
+        <h2 class="text-6xl font-bold hidden md:block">About Us!</h2>
+        <p class="animate-fadeIn">
+          SHOES Nepal provides a one-stop shop for choosing the ideal pair of shoes for all of those shoe lovers out there.
+
+        </p>
+        <p class="animate-fadeIn delay-500">
+          The days of having to visit different stores to find the right size and style for yourself are long gone.
+        </p>
+        <p class="animate-fadeIn delay-1000">
+          You can find a huge selection of stylish shoes in a variety of sizes and styles at SHOES NEPAL, all within a few snaps.
+        </p>
+        <p class="animate-fadeIn delay-1500">
+          Easy, huh? Not only are we here to save you time, but we are also offering you the most stunning shoe options from all the top brands, including DAVINCHI, PRINCESS, and SIGNATURE. At
+          "Organization Name" provides shoes for men, women, and children that are appropriate for every occasion.
+
+        </p>
+      </div>
+    </section>
+    <section
+      id="testimonials"
+      class="section-container mt-8 pt-8 scroll-mt-28 bg-yellow-50 text-black"
+    >
+      <h2 class="text-2xl md:text-5xl font-bold text-center">
+        What People are saying about SHOES NEPAL ?
+      </h2>
+      <div
+        class="text-center flex flex-col items-center md:items-stretch gap-8 md:flex-row justify-between mt-16 max-w-5xl mx-auto"
+      >
+        <div class="w-60 rounded">
+          <img
+            class="w-full mb-4 rounded"
+            src="img/rajan.png"
+            alt="testimonial"
+          />
+
+          <p>
+            “Are you trying to find shoes that are made specifically for you? The way to go is with Shoes Nepal. I adore the build quality and design.”
+
+          </p>
+        </div>
+        <div class="w-60">
+          <img class="w-full mb-4" src="img/ajay.png" alt="testimonial" />
+          <p>
+            "मलाई जुत्ता धेरै मन पर्यो, गुणस्तर पनि उत्कृष्ट छ। सबै कुरा राम्रो
+            छ।"
+          </p>
+        </div>
+        <div class="w-60">
+          <img class="w-full mb-4" src="img/agraj.png" alt="testimonial" />
+          <p>
+            “They create the most durable and excellent shoes. Outstanding fit and comfort are simply unparalleled. Strongly advised!
+            ”
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="section-container flex flex-col lg:flex-row items-center justify-between p-16 bg-gray-500"
+    >
+      <div class="mb-10 lg:mb-0 shrink-0 self-start md:self-center">
+        <h2 class="text-3xl md:text-6xl font-bold">Contact Us</h2>
+        <p class="max-w-[180px] my-8">
+          Shoes Nepal, Machhapokhari, Kathmandu, Nepal
+          <a href="tel:+9779841208969">+9779841208969</a>
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=100065321473452">
+            <img
+              src="img/facebook.svg"
+              alt="facebook icon"
+              class="hover:bg-slate-900"
+            />
+          </a>
+          <a href="https://www.instagram.com/rajesh_pandey11/">
+            <img
+              src="img/instagram.svg"
+              alt="instagram icon"
+              class="hover:bg-slate-900"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/@rajeshpandey-k6v">
+            <img
+              src="img/youtube.svg"
+              alt="youtube icon"
+              class="hover:bg-slate-900"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="w-full">
+        <iframe
+          class="w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4000.6581959832265!2d85.30414452619553!3d27.7360209089942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18c4dbc436bf%3A0x5d89c1eae8251397!2sBalaju%20Machha%20Pokhari%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1730604200178!5m2!1sen!2snp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer class="section-container">
+      <div class="flex items-center justify-center">
+        <a href="#">
+          <img class="w-14" src="img/Nepal.png" alt="logo" />
+          <p class="text-[8px] -mt-3">Shoes Nepal</p>
+        </a>
+        <p>Made with ❤️ &copy; Coded By Rajesh Pandey</p>
+      </div>
+    </footer>
+  </body>
+</html>
